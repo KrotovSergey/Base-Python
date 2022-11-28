@@ -13,4 +13,4 @@ if 0 < area < 5:
     else:
         print( )
 else:
-    print('Неверный номер')5
+    print('Неверный номер')
