@@ -1,4 +1,4 @@
-num_zadacha = int(input('какую задачу проверить? (их всего 5)  '))
+num_zadacha = int(input('какую задачу проверить? (их всего 3)  '))
 match num_zadacha:
     case 1:
         print('Объявите анонимную (лямбда) функцию для определения вхождения в переданную ей строку фрагмента "plr".')
@@ -23,3 +23,16 @@ match num_zadacha:
                 b = b - a
 
         print(a)
+    case 3:
+        print('Напишите программу, удаляющую из текста все слова, содержащие ""абв"".')
+
+        str = 'ываыв ываывгр авьабв  абв авбываоро лфлл'
+        print(str)
+
+        result = str.split()
+
+        result = filter(lambda x:'абв' not in x, result)
+
+        print(*result)
+
+        #print(str.translate({ord(i): None for i in 'абв'}))
